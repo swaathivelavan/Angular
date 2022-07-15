@@ -1,0 +1,27 @@
+<html>
+    <head><title>Login</title>></head>
+<body>
+    <form class='login-form'>
+    <div class='logged_in'>{{ getLogin()}}</div>
+  </form>
+<form class='login-form' id='before_login'>
+    <div id='err' class='error'>{{ getErrMsg()}}</div>
+
+         <h2 class='left'>Sign in</h2>
+         <input type="text" placeholder="Email" name="email" class="form-control" [(ngModel)]="email" [email]="true" >
+
+      
+        <div *ngIf="email.errors?.['email']">Email</div>
+         <div id='email_err' class='error'>{{ getEmailErrMsg()}}</div> 
+         <input type="password" placeholder="Password" name="pwd" [(ngModel)]="pwd">
+         <div id='pwd_err' class='error'>{{ getPwdErrMsg()}}</div>
+         <div class='left small'><a routerLink="/forgot_pwd">Forgot Password?</a></div>
+         <button (click)="login()">Sign in</button>
+         <br>
+         <div class='small'>Not a member yet?</div>
+         <a class='smallLink' routerLink="/sign-up">Join now</a> 
+
+         
+</form>
+</body>
+</html>

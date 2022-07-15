@@ -1,0 +1,26 @@
+<html>
+    <head><title>Login</title>></head>
+<body>
+    
+<form class='login-form' #carModelForm="ngForm">
+         <h2 class='left'>Sign In</h2>
+         <pre id='err' class='error left'>{{ getErrMsg()}}</pre>
+         <input type="text" placeholder="First Name" name="first-name" [(ngModel)]="cred.fname">
+        
+         <input type="text" placeholder="Last Name"  name="last-name" [(ngModel)]="cred.lname">
+        
+         <input type="text" placeholder="Email"  name="email" [(ngModel)]="cred.email">
+         
+         <input type="password" placeholder="Password"  name="pwd" [(ngModel)]="cred.pwd">
+        
+         <input type="password" placeholder="Reenter Password"  name="cpwd" [(ngModel)]="cred.cpwd">
+        
+         <button (click)="signUp()">Sign up</button>
+         
+         <div class='small'>Already a member?</div>
+         <a class="button" class="smallLink" routerLink="/login">Login</a> 
+
+         
+</form>
+</body>
+</html>

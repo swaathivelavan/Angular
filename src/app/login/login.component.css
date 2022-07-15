@@ -1,0 +1,52 @@
+.login-form {
+  background-color: white;
+  width: 25%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.left {
+  text-align: left;
+  position: relative;
+  left: 10%;
+}
+.small {
+  font-size: 12px;
+  color: grey;
+}
+.smallLink {
+  font-size: 12px;
+  color: blue;
+  text-decoration: none;
+}
+.error {
+  font-size: 12px;
+  color: red;
+}
+.logged_in {
+  font-size: 27px;
+  height: 25%;
+}
